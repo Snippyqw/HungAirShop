@@ -18,7 +18,7 @@ namespace TermekKezelo
         private int ar;
         private int varians;
 
-        private Gun(int id, string gyarto, string nev, int tipus, int fps, int suly, string anyag, int ar, int varians)
+        public Gun(int id, string gyarto, string nev, int tipus, int fps, int suly, string anyag, int ar, int varians)
         {
             this.id = id;
             this.gyarto = gyarto;
@@ -29,6 +29,11 @@ namespace TermekKezelo
             this.anyag = anyag;
             this.ar = ar;
             this.varians = varians;
+        }
+
+        public Gun()
+        {
+
         }
 
         //get methods
